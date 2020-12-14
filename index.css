@@ -1,20 +1,14 @@
 * {
     box-sizing: border-box;
     min-height: 100%;
-
 }
 
 body {
     margin: 0;
     padding: 0;
-    /* background-image: url("https://images.unsplash.com/photo-1545608444-f045a6db6133?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80");
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh; */
-    
- 
-    /* background-image: linear-gradient(to bottom right, #c2fed8, #ff0000); */
-    background-color: rgb(255, 179, 179, 0.5);
+    font-family: 'Mountains of Christmas', cursive;
+    background-color: #f2f2f2;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,32 +16,47 @@ body {
     text-align: center;
 }
 
-#display-area {
-    background-color: powderblue;
-    padding: 5em;
-    display: block;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+/* TYPOGRAPHY */
 
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #E40010;
 }
 
-#revealed-area {
-    display: none;
-    /* background-color: powderblue; */
-    padding: 5em;
-}
 
+/* IMAGE DETAILS */
 img {
     width: 800px;
     height: 500px;
-    background-color: rgb(255, 179, 179, 0.5);
-    border: 3px solid red;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.6); 
     border-radius: 50px;
-    /* opacity: 0.7; */
-    /* background-size: cover;
-    background-position: center;
-    min-height: 100vh; */
+}
+
+
+#revealed-area {
+    display: none; 
+}
+
+
+/* BUTTON STYLE */
+button {
+    background: linear-gradient(to right, #138626, #62ea76);
+    color: white;
+    transition: transform 250ms;
+    transform: scale(1);
+    padding: 1em 1.75em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-family: 'Convergence', sans-serif;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.3); 
 }

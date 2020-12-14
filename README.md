@@ -1,0 +1,1 @@
+#A little Holiday Project game using Math.random(). It generates random images upon click of a button and then resets the game.
